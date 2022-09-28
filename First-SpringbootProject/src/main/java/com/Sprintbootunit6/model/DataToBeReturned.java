@@ -7,11 +7,20 @@ public class DataToBeReturned {  // POJO  Gettters / Setters and default contruc
 
     private  String theData;
     private int aNumber;
+    private String aString;
 
+    public String getaString() {
+        return aString;
+    }
 
-    public DataToBeReturned(String theData, int aNumber) {
+    public void setaString(String aString) {
+        this.aString = aString;
+    }
+
+    public DataToBeReturned(String theData, int aNumber, String theString) {
         this.theData = theData;
         this.aNumber = aNumber;
+        this.aString = theString;
     }
 
     public String getTheData() {
